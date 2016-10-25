@@ -1,4 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+
+const propTypes = {
+	number: PropTypes.number,
+};
+
+const defaultProps = {
+	number: -1,
+}
 
 export default class Value extends Component {
 	
@@ -14,3 +22,6 @@ export default class Value extends Component {
 		);
 	}	
 }
+
+Value.propTypes = propTypes;
+Value.defaultProps = defaultProps;

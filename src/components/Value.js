@@ -10,10 +10,6 @@ const defaultProps = {
 
 export default class Value extends Component {
 	
-	constructor(props) {
-		super(props);
-	}
-	
 	render() {
 		return (
 			<div>

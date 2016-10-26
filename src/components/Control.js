@@ -1,26 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 
 const propTypes = {
-	onPlus: PropTypes.func,
-	onSubtract: PropTypes.func,
-	onRandomizeColor: PropTypes.func,
-}
-
-function createWarning(funcName) {
-	return () => console.warn(funcName + ' is not defined');
-}
-
-const defaultProps = {
-	onPlus: createWarning('onPlus'),
-	onSubtract: createWarning('onSubtract'),
-	onRandomizeColor: createWarning('onRandomizeColor'),
+	onPlus: PropTypes.func.isRequired,
+	onSubtract: PropTypes.func.isRequired,
+	onRandomizeColor: PropTypes.func.isRequired,
 }
 
 export default class Control extends Component {
-	
-	constructor(props) {
-		super(props);
-	}
 	
 	render() {
 		return (
@@ -34,4 +20,3 @@ export default class Control extends Component {
 }
 
 Control.propTypes = propTypes;
-Control.defaultProps = defaultProps;

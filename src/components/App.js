@@ -1,19 +1,7 @@
 import React, { Component } from 'react';
 import Counter from './Counter';
 
-const propTypes = {
-
-};
-
-const defaultProps = {
-
-};
-
 export default class App extends Component {
-	
-	constructor(props) {
-		super(props);
-	}
 	
 	render() {
 		return (
@@ -21,6 +9,3 @@ export default class App extends Component {
 		);
 	}	
 }
-
-App.propTypes = propTypes;
-App.defaultProps = defaultProps;
